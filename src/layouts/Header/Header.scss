@@ -43,6 +43,20 @@
 
     &-link {
       padding: fluid-to-laptop(14, 12) fluid-to-laptop(24, 20);
+      color: var(--color-gray-75);
+      border-radius: var(--border-radius-s);
+
+      @include hover {
+        color: var(--color-white);
+        background-color: var(--color-red-45);
+      }
+
+      &.is-active {
+        font-weight: 500;
+        color: var(--color-white);
+        background-color: var(--color-black-10);
+        pointer-events: none;
+      }
     }
   }
 }
