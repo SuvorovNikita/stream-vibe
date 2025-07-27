@@ -1,3 +1,10 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
 html {
   &.is-lock {
     overflow: hidden;
