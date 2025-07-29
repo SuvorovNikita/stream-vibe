@@ -14,7 +14,7 @@ class OverlayMenu {
     this.rootElement = document.querySelector(this.selectors.root)
     this.dialogElement = document.querySelector(this.selectors.dialog)
     this.burgerButtonElement = document.querySelector(
-      this.selectors.burgerButton
+      this.selectors.burgerButton,
     )
     this.bindEvents()
   }
