@@ -1,12 +1,14 @@
 import { Image } from "minista"
 import Icon from "../Icon"
 
+import "./CategoryCard.scss"
+
 const CategoryCard = (props) => {
-  const { title, image = [] } = props
+  const { title, images = [] } = props
   return (
     <a href="/movies" className="category-card">
       <div className="category-card__images">
-        {image.map((imgSrc, index) => (
+        {images.map((imgSrc, index) => (
           <Image className="category-card__image" src={imgSrc} key={index} />
         ))}
       </div>
