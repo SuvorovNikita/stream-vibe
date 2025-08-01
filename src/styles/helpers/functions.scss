@@ -1,11 +1,11 @@
-@use "../helpers/constants" as *;
-@use "sass:math";
+@use 'constants' as *;
+@use 'sass:math';
 
-@function fluid($max: 100, $min: 10, $isEndOflaptop: false) {
+@function fluid($max: 100, $min: 10, $isEndOfLaptop: false) {
   $maxViewportWidth: $container-desktop-width;
   $minViewportWidth: 390;
 
-  @if ($isEndOflaptop) {
+  @if ($isEndOfLaptop) {
     $minViewportWidth: $container-laptop-width;
   }
 
@@ -25,5 +25,5 @@
 }
 
 @function fluid-to-laptop($max: 100, $min: 10) {
-  @return fluid($max, $min, true);
+  @return fluid($max, $min, true)
 }

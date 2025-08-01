@@ -4,7 +4,6 @@
 
   padding: 0;
   background-color: var(--color-black-10);
-
   border: var(--border-width-m) solid var(--color-black-15);
   border-radius: var(--border-radius-xs);
 
@@ -39,10 +38,8 @@
     stroke-linecap: round;
     stroke-dasharray: 60 207;
     transition:
-      stroke-dasharray var(--transition-duration-longer)
-        cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset var(--transition-duration-longer)
-        cubic-bezier(0.4, 0, 0.2, 1);
+      stroke-dasharray var(--transition-duration-longer) cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset var(--transition-duration-longer) cubic-bezier(0.4, 0, 0.2, 1);
 
     &--2 {
       stroke-dasharray: 60 60;

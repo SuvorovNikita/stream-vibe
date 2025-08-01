@@ -1,8 +1,8 @@
-import Categories from "@/sections/Categories"
-import Hero from "@/sections/Hero"
+import Hero from '@/sections/Hero'
+import Categories from '@/sections/Categories'
 
 export const metadata = {
-  title: "Home",
+  title: 'Home',
   isHeaderFixed: true,
 }
 

@@ -1,9 +1,9 @@
 .hero {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  min-height: 100vh;
   padding-bottom: var(--section-padding-y);
+  text-align: center;
 
   @include mobile {
     min-height: 639px;
@@ -16,27 +16,26 @@
     --heroGradientHeight: 67.5%;
 
     --heroGraidentTop: linear-gradient(
-        to bottom,
-        var(--heroGradientColorStart) 0%,
-        var(--heroGradientColorEnd) 100%
-      )
-      50% 0/100% var(--heroGradientHeight);
+      to bottom,
+      var(--heroGradientColorStart) 0%,
+      var(--heroGradientColorEnd) 100%
+    ) 50% 0/100% var(--heroGradientHeight);
 
     --heroGraidentBottom: linear-gradient(
-        to top,
-        var(--heroGradientColorStart) 0%,
-        var(--heroGradientColorEnd) 100%
-      )
-      50% 101%/100% var(--heroGradientHeight);
+      to top,
+      var(--heroGradientColorStart) 0%,
+      var(--heroGradientColorEnd) 100%
+    ) 50% 101%/100% var(--heroGradientHeight);
 
-    @include flex-center(false);
+    @include flex-center;
 
     flex-grow: 1;
     padding-top: fluid(195, 150);
     padding-bottom: fluid(131, 50);
-
-    background: var(--heroGraidentTop), var(--heroGraidentBottom),
-      url("@/assets/images/hero/bg.png") 50% / cover;
+    background:
+      var(--heroGraidentTop),
+      var(--heroGraidentBottom),
+      url('../../assets/images/hero/bg.png') 50%/cover;
     background-repeat: no-repeat;
   }
 

@@ -60,7 +60,7 @@
       }
     }
 
-    &:note([open]) {
+    &:not([open]) {
       @include starting-styles;
     }
   }
